@@ -4,23 +4,65 @@
 <title>FORM</title>
 </head>
 <body>
-    <label for="Account Type">Account Type
+  <form>
+    <label for="Account Type">Account Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <input type="radio" id="Account Type" name="Account Type" value="Personal Account ">Personal Account
-        <input type="radio" id="Business Account" value="Business Account" name="Account Type">Bussiness Account
+      <input type="radio" id="Account Type" name="Account Type" value="Personal Account ">Personal Account
+      <input type="radio" id="Business Account" value="Business Account" name="Account Type">Bussiness Account
 
-      </label><br><br>
+    </label><br><br>
 
-    <label>First Name<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;  <input for="First Name">  </label><br><br>
+    <label>First Name<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+       <input for="First Name" placeholder="enter your First Name"  required>  </label><br><br>
 
-    <label>Last Name<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp; <input for="Last Name">  </label><br><br>
+    <label>Last Name<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <input for="Last Name" placeholder="enter your Last Name" required>  </label><br><br>
 
-    <label>Country/Region<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp; <input for="">  </label><br><br>
+    <label>Country/Region<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;  </label>
+    <select id="Country/Region" name="Country/Region">
+      <option value="Australia ">Australia </option>
+      <option value="Brazil">Brazil</option>
+      <option value="Canada">Canada</option>
+      <option value="Germany">Germany</option>
+      <option value="India">India</option>
+      <option value="Japan">Japan</
+      <option value="South Africa">South Africa</option>
+      <option value="U.S.A">U.S.A</option>
+      <option value="United Kingdom">United Kingdom</option>
+    </select><br><br>
 
-    <label>Street Address<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;  <input for="Street Address">   </label><br><br>
-    <label>Street Address 2<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;  <input for="Street address 2">  </label><br><br>
-    <label>City<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp; <input for="City">  </label><br><br>
-    <label>State/Province<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp; <input for="State/Province">  </label><br><br>
-    <label>ZIP/Postal Code<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp; <input for="Zip/Postal Code">  </label>
+   
+    <label>Street Address<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+      <input for="Street Address" placeholder="enter your street Adress">   </label><br><br>
+   
+    <label>Street Address 2<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;  
+      <input for="Street address 2"placeholder="enter your street Adress 2" required>  </label><br><br>
+   
+
+    <label>City<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input for="City" placeholder="enter City Name" required>   
+      
+    </label><br><br>
+   
+   
+    <label>State/Province<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+       <select id="state" name="state" required>
+        <option value=""disabled selected>select state or province</option>
+
+        <option value="New South Wales (Aus)">New South Wales (Australia)</option>
+        <option value="Victoria (Aus)">Victoria (Australia)</option>
+
+  
+        <option value="Sao Paulo (Braz)">Sao Paulo (Brazil)</option>
+        <option value="Rio de Janeiro (Braz)">Rio de Janeiro (Brazil)</option>
+
+       </select>
+    </label><br><br>
+
+    <label>ZIP/Postal Code<span style="color:red">*</span> &nbsp;&nbsp;&nbsp;&nbsp; 
+      <input for="Zip/Postal Code" placeholder="enter your ZIP/Postal Code " required>  </label>
+  
+  </form>
 
 </body>
