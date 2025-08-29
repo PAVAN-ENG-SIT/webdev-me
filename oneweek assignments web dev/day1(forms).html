@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+
+        <label for="name">Name:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="name" placeholder="enter your name here:" required></label><br><br>
+        <label>
+            Email:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text"  placeholder="enter your Email here..." required>
+        
+        </label ><br><br>
+            <label for="phone no">Phone Number:
+            &nbsp;&nbsp;
+                <input name="phone no" type="text"  placeholder="enter your phone number here..." required>
+            </label><br><br>
+
+        <label for="Address">Address:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input name="Address"  type="text"  placeholder="enter your Adress here..." required>
+            
+        </label><br><br>
+        <label for="DOB">Date of Birth:
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input for="DOB" type="date"  required >
+        </label><br><br>
+        <label for="Gender">
+            Gender:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input name="gender" type="radio" value="male" >male
+        <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input name="gender" type="radio" value="female" >female
+    </label><br><br>
+        <label for="skills">Skills:
+            <input name="skills" type="checkbox">python(tensorflow,pytorch,skicit learn)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">html<br>
+        
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name="skills" type="checkbox"> css<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name="skills" type="checkbox"> javascript <br>     
+ </label><br><br>
+
+ <label >Resume upload:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="file" name="resume" accept=".pdf,.doc,.DOCTYPE" required>
+ </label>
+
+<br>
+
+Cover letter:<br>
+<textarea rows="5" cols="50" placeholder="upload the cover letter here...." required ></textarea><br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button >submit</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button>Reset</button> 
+   </form>
+
+
+
+</body>
+</html>

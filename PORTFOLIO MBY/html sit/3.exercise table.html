@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header{
+            background-color: orange;
+        }
+        .tr1{
+            background-color: rgb(248, 206, 129);
+        }
+        .tr2{
+            background-color: rgb(248, 206, 129);
+        }
+        .tr3{
+            background-color: rgb(248, 206, 129);
+        }
+
+
+
+h1{
+    text-align:center;
+}
+
+        .dep{
+            background-color: skyblue;
+            height: 20px;
+            
+        }
+        .sem{
+            background-color: yellow;
+        }
+        .container{
+            display:flex;
+            padding:20px;
+        }
+        .box{
+            /* padding-right:50px; */
+             /* margin-left: auto;  */
+             margin:center;
+        }
+        .box1{
+            /* padding-top:30px;*/
+            /* padding-bottom:0px; */
+            /* padding-left:50px;  */
+             margin: center  ;
+            /* margin-right: auto; */
+        }
+        .table1{
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+<h1 >Table with header and background color</h1>
+
+
+    <table border cellspacing="0" cellpadding="10" class="table1">
+            <tr class="header">
+                        <th>Name</th>
+                        <th>Job Title</th>
+                        <th>Email addesss</th>
+
+            </tr>
+          
+            <tr class="tr1">
+                <td>Anna Fitzgerald</td>
+                <td>Staff Writer</td>
+                <td> Example@company.com</td>
+
+            </tr>
+             <tr  class="tr2">
+                <td>John Smith</td>
+                <td>Marketing Manager</td>
+                <td>example2@company.com</td>
+
+            </tr>
+
+             <tr  class="tr3">
+                <td>Zendaya Grace</td>
+                <td>CEO</td>
+                <td>example3@company.com</td>
+
+            </tr >   
+        </table>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+
+<section>
+    <div class="container">
+        <div class="box">
+
+                    <article>
+                    <table border cellspacing="0" cellpadding="10">
+                        <tr>
+                            <td  class="dep" rowspan="5">Department</td>
+                            <td>Semester</td>
+                            <td colspan="2"> Si.No & Name</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td class="sem" style="padding-bottom: 50px; padding-top:0px;" rowspan="2">sem3</td>
+                            <td> 1</td>
+                            <td> adam</td>
+
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Alice</td>
+
+                        </tr>      
+
+                        <tr>
+                            <td class="sem" rowspan="2" style="padding-bottom: 50px; padding-top:0px; ">Sem4</td>
+                            <td>3</td>
+                            <td>Bob</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Cavin</td>
+                        </tr>
+
+                    </table>
+                </article>
+</div>
+<div class="box2">
+            <aside>
+                <table border cellspacing="0" cellpadding="10">
+                        <tr>   
+                            
+                            <th rowspan="2"></th>
+                            <th colspan="2">Average</th>
+                            <th rowspan="2">Red eyes</th>
+
+                        </tr>
+                        <tr>
+                            <td>height</td>
+                            <td>weight</td>
+                        </tr>
+                        <tr>
+                            <th>Males</th>
+                            <td>1.9</td>
+                            <td>0.003</td>
+                            <td>40%</td>
+                        </tr>
+
+
+
+                        <tr>
+                                <th>females</th>
+                                <td>1.7</td>
+                                <td>0.002</td>
+                                <td>43%</td>
+
+                        </tr>
+
+
+                    </table>
+
+                </aside>
+                </div>
+                </div>
+    </section>
+</body>
+</html>
